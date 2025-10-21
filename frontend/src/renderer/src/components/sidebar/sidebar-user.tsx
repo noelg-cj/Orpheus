@@ -55,7 +55,7 @@ const UserCard = () => {
                             </Avatar>
                             <div className="grid flex-1 text-left text-sm leading-tight">
                                 <span className="truncate font-medium">Noel George</span>
-                                <span className="truncate text-xs text-zinc-300">noelg-cj</span>
+                                <span className="truncate text-xs text-zinc-300">noel@cet.ac.in</span>
                             </div>
                             <ChevronsUpDown />
                         </SidebarMenuButton>

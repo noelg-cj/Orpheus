@@ -1,8 +1,9 @@
-#!/usr/bin/env node
+import fs from "fs";
+import path from "path";
+import dotenv from "dotenv"; // Use ES module syntax for dotenv
 
-const fs = require("fs");
-const path = require("path");
-require("dotenv").config(); // Load .env file
+// Load .env file
+dotenv.config();
 
 // Define the working directory (default to current directory if not provided)
 const WORKING_DIR = process.env.WORKING_DIR || process.cwd();
@@ -281,12 +282,3 @@ switch (command) {
     console.log("Commands: init, add <file>, commit <message>, log");
 }
 
-module.exports = {
-  init,
-  add,
-  commit,
-  push,
-  pull,
-  logHistory,
-  merge,
-};
