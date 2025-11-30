@@ -6,7 +6,7 @@ const GlobalLayout = () => {
   return (
     <div className='flex flex-1 min-h-0'>
         <GlobalSidebar />
-        <main className='flex-1 overflow-auto bg-background'>
+        <main className='flex-1 overflow-auto bg-red-600'>
             <Outlet />
         </main>
     </div>
