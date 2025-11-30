@@ -1,6 +1,6 @@
 import { ID, ISODateString } from './common';
 
-export type TaskStatus = 'pending' | 'in-progress' | 'completed';
+export type TaskStatus = 'todo' | 'in-progress' | 'completed';
 
 export type TaskPriority = 'low' | 'medium' | 'high';
 

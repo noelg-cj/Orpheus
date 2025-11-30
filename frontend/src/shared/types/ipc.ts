@@ -24,12 +24,12 @@ export type ProjectDeleteResponse = { success: true };
 
 // Tasks
 export type TaskListByProjectRequest = {
-    projectID: string;
+    projectId: string;
 }
 export type TaskListByProjectResponse = Task[];
 
 export type TaskCreateRequest = {
-    projectID: string;
+    projectId: string;
     title: string;
 }
 export type TaskCreateResponse = Task;
@@ -47,7 +47,7 @@ export type TaskDeleteResponse = { success: true };
 
 // git
 export type GitStatusRequest = {
-    projectID: string;
+    projectId: string;
 }
 export type GitStatusResponse = {
     branch: string | null;
@@ -63,23 +63,23 @@ export type GitStatusResponse = {
 }
 
 export type GitCommitRequest = {
-    projectID: string;
+    projectId: string;
     message: string;
 }
 export type GitCommitResponse = { success: true };
 
 export type GitPullRequest = {
-    projectID: string;
+    projectId: string;
 }
 export type GitPullResponse = { success: true };
 
 export type GitPushRequest = {
-    projectID: string;
+    projectId: string;
 }
 export type GitPushResponse = { success: true };
 
 export type GitLogRequest = {
-    projectID: string;
+    projectId: string;
     limit?: number;
 }
 export type GitLogResponse = {
